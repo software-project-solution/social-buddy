@@ -1,4 +1,4 @@
-package hiranwj.com.socialbuddy;
+package hiranwj.com.socialbuddy.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
