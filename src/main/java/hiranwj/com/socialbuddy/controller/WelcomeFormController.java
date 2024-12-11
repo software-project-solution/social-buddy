@@ -2,9 +2,17 @@ package hiranwj.com.socialbuddy.controller;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.net.URL;
 
 public class WelcomeFormController {
     public TextField txtFirstName;
@@ -13,6 +21,7 @@ public class WelcomeFormController {
     public TextField txtPassword;
     public TextField txtConfirmPassword;
     public Button btnCreateAccount;
+    public Label lblLogin;
 
     public void initialize(){
 
@@ -56,6 +65,26 @@ public class WelcomeFormController {
                 txtFirstName.requestFocus();
             }
         });
+
+        lblLogin.setOnMouseClicked(event -> {
+            URL resource = getClass().getResource("/hiranwj/com/socialbuddy/view/LoginForm.fxml");
+            if (resource == null) {
+                System.err.println("FXML file not found! Please check the file path.");
+                return;
+            }
+            try {
+                Parent container = FXMLLoader.load(resource);
+                Scene secondScene = new Scene(container);
+                Stage stage = (Stage) lblLogin.getScene().getWindow();
+                stage.setScene(secondScene);
+                stage.setTitle("My Second Stage");
+                stage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+                throw new RuntimeException("Error loading FXML file", e);
+            }
+        });
+
 
     }
 
