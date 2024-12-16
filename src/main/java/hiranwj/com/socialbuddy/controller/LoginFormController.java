@@ -52,7 +52,7 @@ public class LoginFormController {
                         Scene secondScene = new Scene(container);
                         Stage stage = (Stage) btnLogin.getScene().getWindow(); // The scene is set for the current stage
                         stage.setScene(secondScene);
-                        stage.setTitle("My Second Stage");
+                        stage.setTitle("Social Buddy v1.0.0");
                         stage.show();
 
                     } catch (IOException e) {
