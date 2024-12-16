@@ -1,4 +1,4 @@
-# Social Buddy
+# Social Buddy v1.0.0
 
 ## Prerequisites
 
@@ -14,6 +14,8 @@ Before setting up the project, ensure the following tools are installed on your 
 3. **JavaFX (Version 17.0.13 LTS)**
    - Download JavaFX 17.0.13 LTS from the Gluon website: [https://gluonhq.com/products/javafx/](https://gluonhq.com/products/javafx/).
 
+4. **JDBC Driver for MySQL (Version 8.0.31+)**
+   - Download JDBC Driver LTS from the Gluon website: [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/)
 ---
 
 ## Cloning the Repository
@@ -49,3 +51,22 @@ Once you’ve completed the setup:
 3. Run the application.
 
 For any issues or inquiries, feel free to raise an issue in the repository.
+
+# Application Views
+Below are the main views of the Social Buddy application:
+
+### Login view
+- The login page allows users to sign in with their credentials.
+<img src="src/main/resources/hiranwj/com/socialbuddy/img/login_form.JPG" alt="alt text" width="500">
+
+### Create an account view
+- The sign-up page lets new users create an account with their details.
+<img src="src/main/resources/hiranwj/com/socialbuddy/img/signup_form.JPG" alt="alt text" width="500">
+
+### Create a posting view
+- This view enables users to create and share posts.
+<img src="src/main/resources/hiranwj/com/socialbuddy/img/post_form.JPG" alt="alt text" width="800">
+
+### Subscribe View
+- The subscribe page allows users to follow or subscribe to other profiles or pages.
+<img src="src/main/resources/hiranwj/com/socialbuddy/img/subscribe_form.JPG" alt="alt text" width="800">
