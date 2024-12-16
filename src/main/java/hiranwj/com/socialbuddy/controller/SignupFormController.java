@@ -2,6 +2,7 @@ package hiranwj.com.socialbuddy.controller;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -10,18 +11,24 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.net.URL;
 
 public class SignupFormController {
+    @FXML
     public TextField txtFirstName;
+    @FXML
     public TextField txtLastName;
+    @FXML
     public TextField txtEmail;
+    @FXML
     public TextField txtPassword;
+    @FXML
     public TextField txtConfirmPassword;
+    @FXML
     public Button btnCreateAccount;
+    @FXML
     public Label lblLogin;
 
     public void initialize(){
