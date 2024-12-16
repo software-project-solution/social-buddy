@@ -10,11 +10,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.net.URL;
 
-public class WelcomeFormController {
+public class SignupFormController {
     public TextField txtFirstName;
     public TextField txtLastName;
     public TextField txtEmail;
@@ -77,7 +78,7 @@ public class WelcomeFormController {
                 Scene secondScene = new Scene(container);
                 Stage stage = (Stage) lblLogin.getScene().getWindow();
                 stage.setScene(secondScene);
-                stage.setTitle("My Second Stage");
+                stage.setTitle("Login");
                 stage.show();
             } catch (IOException e) {
                 e.printStackTrace();
